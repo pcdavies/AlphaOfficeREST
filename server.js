@@ -47,7 +47,8 @@ app.get('/products', function(req, res) {
         console.log('sql executed')
 	    console.log(rows);
         var products = {"Products" : rows}
-        res.end(JSON.stringify(products));
+//        res.end(JSON.stringify(products));
+        res.end("TESTING");
     });
 });
 
