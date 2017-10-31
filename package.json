@@ -9,7 +9,7 @@
     "express": "^4.10.6"
   },
    "scripts": {
-        "prepublish": "zip -r target/msdbw-microservice.zip manifest.json *.js index.html startMySQL.sh node_modules"
+        "prepublish": "zip -r target/msdbw-microservice.zip manifest.json *.js index.html node_modules"
     },
   "main": "server.js",
   "engines": {
