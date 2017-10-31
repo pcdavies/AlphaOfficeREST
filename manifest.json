@@ -1,6 +1,5 @@
 {
     "runtime": {
         "majorVersion": "6"
-    },
-    "command": "sh ./startMySQL.sh"
+    }
 }
