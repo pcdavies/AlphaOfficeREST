@@ -33,7 +33,7 @@ app.get('/products', function(req, res) {
 
 	console.log('/products api called')
 
-    res.end(myJSON);
+    res.end(JSON.stringify(myJSON));
 });
 
 app.get('/searchProductNames', function(req, res) {
