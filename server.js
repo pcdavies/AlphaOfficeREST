@@ -3,17 +3,16 @@
 var http = require('http')
 var express = require('express')
 var bodyParser = require('body-parser')
-var fs = require('fs')
 var hostString = process.argv[2]
+var myJSON = require('./product-catalog.json');
 
 
 var port = process.env.PORT || 8002
 var app = express()
 
-var myJSON = JSON.parse(fs.readFileSync('product-catalog.json'));
 
-app.use(bodyParser.json())
-app.use(express.static(__dirname))
+app.use(bodyParser.json());
+app.use(express.static(__dirname));
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
